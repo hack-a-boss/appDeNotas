@@ -4,7 +4,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const fileUpload = require('express-fileupload');
 const app = express();
-const port = 8888;
+const port = process.env.PORT;
 
 // Notes controllers
 const listNote = require('./controllersNotes/listNotes');
